@@ -82,7 +82,7 @@ class OLCBot {
         val miraiConfig = BotConfiguration.Default.apply {
             fileBasedDeviceInfo()
             protocol = BotConfiguration.MiraiProtocol.ANDROID_PHONE
-            heartbeatStrategy = BotConfiguration.HeartbeatStrategy.STAT_HB
+            heartbeatStrategy = BotConfiguration.HeartbeatStrategy.REGISTER
             cacheDir = getCacheFolder()
         }
         bot = BotFactory.newBot(config.qq, config.password, configuration = miraiConfig)
